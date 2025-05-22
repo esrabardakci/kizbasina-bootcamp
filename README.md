@@ -1,1 +1,1 @@
-Bu kod içerisinde Titanic veri seti ile ilgili alıştırma satırları bulunuyor.
+Bu alan Bootcamp kapsamında verilen tasklar için hazırlanan ödev dosyalarını içerir.
