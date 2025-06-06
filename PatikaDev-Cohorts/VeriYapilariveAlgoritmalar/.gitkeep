@@ -1,1 +1,50 @@
+Proje 1
+
+[22,27,16,2,18,6] -> Insertion Sort
+
+1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+#Aşama 1: Öncelikle en küçük elemanı bulup listenin en başındaki eleman ile yer değiştirelim.
+[2,27,16,22,18,6]
+
+#Aşama 2: İkinci en küçük elemanı bulup 2. sıradaki eleman ile yer değiştirelim.
+[2,6,16,22,18,27]
+
+#Aşama 3: Aynı işlemi devam ettirelim.
+[2,6,16,18,22,27] ->Listemiz artık Insertion Sort modeline göre sıralandı.
+
+------------------------------------------------------------------------------
+2. Big-O gösterimini yazınız.
+Listemiz n elemanlı olsun(6 elemanlı listemiz), ilk aşamada n eleman içerisinde en küçük elemanı bulduk yani n kadar işlem yaptık.
+Sonrasında (n-1) eleman içerisinde bu işlemi yaptık, yani (n-1) işlem yaptık. 
+Son aşamamızda (n-2) eleman içerisinde arama yaptık, listemiz sıralansa da bunu kesin olarak bilemediğimiz için 1 eleman kalana kadar bu işleme devam ettik.
+yani n+(n-1)+(n-2)+(n-3)+(n-4)+(n-5->yani 1)= (n*(n+1))/2 kadar işlem yaptık. 
+Bunu sadeleştirdiğimizde Big-O gösterimi O(n^2) diyebiliriz.
+------------------------------------------------------------------------------
+
+3. Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+Dizimizin sıralı hali: [2,6,16,18,22,27]
+18 sayısı dizinin orta noktasında olduğundan average case kapsamına girer.
+------------------------------------------------------------------------------
+
+4. [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+Adım 1: [2,3,5,8,7,9,4,15,6] ->en küçük elemanı listenin başına aldık, listenin başındakini ise en küçük elamanın konumuna yerleştirdik.
+
+Adım 2: [2,3,4,8,7,9,5,15,6] ->ikinci en küçük eleman zaten 2. sırada olduğu için işleme 3. en küçük elemanla devam ettik ve 3. konumdaki 5 ile 4'ün yerlerini değiştirdik.
+
+Adım 3: [2,3,4,5,7,9,8,15,6] -> Aynı işlemi 4. en küçük eleman için de yaptık.
+
+Adım 4: [2,3,4,5,6,9,8,15,7] -> Aynı işlemi 5. en küçük eleman için de yaptık ve olması gereken 5. konum ile konumunu yer değiştirdik.
+
+Adım 5: [2,3,4,5,6,7,8,15,9]
+
+Adım 6: [2,3,4,5,6,7,8,9,15] ->Listemiz sıralandı.
+
+
+
+
+
 
