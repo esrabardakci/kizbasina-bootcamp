@@ -1,0 +1,22 @@
+Proje 2
+
+[16,21,11,8,12,22] -> Merge Sort
+
+1. Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+-**Listeyi bir eleman kalana kadar ortadan ikiye ayıralım.**
+>[16,21,11] [8,12,22]
+
+>[16,21] [11] [8,12] [22]
+
+>[16] [21] [11]  [8] [12]  [22]
+*Parçalara ayırdığımız listeyi o parçalar halinde küçükten büyüğe sıralayarak birleştirelim.
+
+>[16,21] [11] [8,12] [22]
+>[11,16,21] [8,12,22]
+>[8,11,12,16,21,22]
+
+--------------------------------------------------
+2. Big-O gösterimini yazınız.
+Her aşamada ortalama n işlem yapılıyor dersek, her aşamada dizimiz yarıya bölünüyordu yani 2^x = n -> logn=x yani adım sayısı.
+Özetle biz n adet işlemi logn kere uyguluyorsak Big-O gösterimimiz: O(nlogn)
