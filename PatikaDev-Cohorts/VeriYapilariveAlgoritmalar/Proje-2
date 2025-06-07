@@ -16,5 +16,5 @@ Proje 2
 
 --------------------------------------------------
 2. Big-O gösterimini yazınız.
-Her aşamada ortalama n işlem yapılıyor dersek, her aşamada dizimiz yarıya bölünüyordu yani 2^x = n -> logn=x adım sayısımızdır.
+Her aşamada ortalama n işlem yapılıyor dersek, her aşamada dizimiz yarıya bölünüyordu yani 2^x = n -> logn=x adım sayımızdır.
 Özetle biz n adet işlemi logn kere uyguluyorsak Big-O gösterimimiz: O(nlogn)
